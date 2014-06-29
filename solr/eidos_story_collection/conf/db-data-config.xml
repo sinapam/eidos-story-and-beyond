@@ -1,0 +1,9 @@
+<dataConfig>
+    <dataSource driver="org.postgresql.Driver" url="jdbc:postgresql://localhost:5432/eidos_story" user="eidos" password="eidos" />
+    <document>
+        <entity name="story" query="select * from api_story"
+                deltaQuery="select id from api_story where last_modified_on > '${dataimporter.last_index_time}'">
+            <field column="STAKEHOLDER" name="stakeholder" />
+        </entity>
+    </document>
+</dataConfig>

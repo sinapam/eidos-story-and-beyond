@@ -1,0 +1,1 @@
+bs = angular.module 'eidosBs', []
