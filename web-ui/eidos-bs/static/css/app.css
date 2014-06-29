@@ -1,0 +1,14 @@
+#header {
+  text-align: center;
+}
+#header small {
+  display: block;
+}
+.story-count {
+  color: #ecf0f1;
+  background-color: #3498db;
+  text-align: center;
+}
+.story-count small {
+  color: #BDC3C7;
+}
