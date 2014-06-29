@@ -1,2 +1,4 @@
 data
+bower_components
+node_modules
 solr/eidos_story_collection/conf/dataimport.properties
