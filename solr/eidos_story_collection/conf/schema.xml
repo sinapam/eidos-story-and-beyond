@@ -4,6 +4,7 @@
 	<field name="id" type="int" indexed="true" stored="true" required="true"/>
 	<field name="stakeholder" type="string" indexed="true" stored="true" required="true"/>
 	<field name="last_modified_on" type="date" indexed="true" stored="true" required="true"/>
+	<field name="created_on" type="date" indexed="true" stored="true" required="true"/>
 	<dynamicField name="*" type="string" indexed="true" stored="true"/>
 	<uniqueKey>id</uniqueKey>
 	<fieldType name="int" class="solr.TrieIntField" precisionStep="0" positionIncrementGap="0"/>
