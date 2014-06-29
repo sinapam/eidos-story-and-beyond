@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <schema version="1.5" name="simplest-solr">
 	<fieldType name="string" class="solr.StrField"/>
-	<field name="id" type="string" indexed="true" stored="true" required="true"/>
-	<dynamicField name="*" type="string" indexed="true" stored="true" multiValued="true"/>
+	<field name="id" type="int" indexed="true" stored="true" required="true"/>
+	<field name="stakeholder" type="string" indexed="true" stored="true" required="true"/>
+	<field name="last_modified_on" type="date" indexed="true" stored="true" required="true"/>
+	<dynamicField name="*" type="string" indexed="true" stored="true"/>
 	<uniqueKey>id</uniqueKey>
+	<fieldType name="int" class="solr.TrieIntField" precisionStep="0" positionIncrementGap="0"/>
+	<fieldType name="date" class="solr.TrieDateField" precisionStep="0" positionIncrementGap="0"/>
 </schema>
 
